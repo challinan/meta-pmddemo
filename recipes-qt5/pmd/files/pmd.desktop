@@ -2,8 +2,8 @@
 Name=Patient Monitor
 Comment=Medical Patient Monitor Demo
 Icon=exec.png
-TryExec=/usr/share/examples/HAMPDemo/PatientMonitorDemo/PatientMonitorDemo
-Exec=/usr/share/examples/HAMPDemo/PatientMonitorDemo/PatientMonitorDemo
+TryExec=/usr/bin/PatientMonitorDemo
+Exec=/usr/bin/PatientMonitorDemo
 StartupNotify=true
 Terminal=false
 Type=Application
