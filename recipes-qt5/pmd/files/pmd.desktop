@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=Patient Monitor
 Comment=Medical Patient Monitor Demo
-Icon=exec.png
+Icon=heartbeat.png
 TryExec=/usr/bin/PatientMonitorDemo
 Exec=/usr/bin/PatientMonitorDemo
 StartupNotify=true
