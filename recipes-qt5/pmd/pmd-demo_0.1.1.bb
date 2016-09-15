@@ -10,6 +10,9 @@ SRC_URI = "git://github.com/challinan/pmd-demo;branch=exp-12801024"
 SRCREV = "be9772076359924dea677d421ce315bd4aa33abb"
 SRC_URI += "file://pmd.desktop"
 
+# i.mx6 LCD (Hannstar) is XGA
+SRC_URI_mx6q += "file://xga.patch"
+
 # Add supporting files: desktop launcher, systemd services
 SRC_URI += "file://pmd.desktop \
             file://session \
@@ -19,7 +22,7 @@ SRC_URI += "file://pmd.desktop \
             file://48x48_heartbeat.png \
             file://64x64_heartbeat.png"
 
-#S = "${WORKDIR}/git"
+S = "${WORKDIR}/git"
 
 inherit qmake5
 
