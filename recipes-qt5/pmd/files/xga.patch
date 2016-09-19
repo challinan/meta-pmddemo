@@ -1,8 +1,8 @@
 diff --git a/PatientMonitorDemo.pro b/PatientMonitorDemo.pro
-index 3e09a44..7b9c074 100644
+index 398bcaf..37e73c1 100644
 --- a/PatientMonitorDemo.pro
 +++ b/PatientMonitorDemo.pro
-@@ -33,7 +33,7 @@ DEFINES += PMD_NUCLEUS
+@@ -34,7 +34,7 @@ DEFINES += PMD_HAMP
  #   - The demo can be used with one of the design size
  #       DESIGN_SIZE_XGA
  #       DESIGN_SIZE_720p
@@ -11,14 +11,14 @@ index 3e09a44..7b9c074 100644
  
  #   - Un-comment following to enable graph scrolling on demo startup
  #DEFINES += ENABLE_GRAPH_SCROLLING
-@@ -106,8 +106,8 @@ contains(DEFINES, DESIGN_SIZE_720p) {
- }
+@@ -95,8 +95,8 @@ contains(DEFINES, PMD_HAMP) {
+ 
  
  contains(DEFINES, DESIGN_SIZE_XGA) {
--   #FORMS       += XGA/mainwindow.ui
--    #RESOURCES   += XGA/images.qrc
-+   FORMS       += XGA/mainwindow.ui
-+   RESOURCES   += XGA/images.qrc
+-  #  FORMS       += XGA/mainwindow.ui
+-  #  RESOURCES   += XGA/images.qrc
++    FORMS       += XGA/mainwindow.ui
++    RESOURCES   += XGA/images.qrc
  }
- contains(DEFINES, PMD_HAMP) {
-     target.path=$$[QT_INSTALL_EXAMPLES]/HAMPDemo/PatientMonitorDemo
+ 
+ contains(DEFINES, DESIGN_SIZE_720p) {

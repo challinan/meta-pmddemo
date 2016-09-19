@@ -1,0 +1,29 @@
+diff --git a/recipes-qt5/pmd/files/xga.patch b/recipes-qt5/pmd/files/xga.patch
+index 72556d4..e69de29 100644
+--- a/recipes-qt5/pmd/files/xga.patch
++++ b/recipes-qt5/pmd/files/xga.patch
+@@ -1,24 +0,0 @@
+-diff --git a/PatientMonitorDemo.pro b/PatientMonitorDemo.pro
+-index 3e09a44..7b9c074 100644
+---- a/PatientMonitorDemo.pro
+-+++ b/PatientMonitorDemo.pro
+-@@ -33,7 +33,7 @@ DEFINES += PMD_NUCLEUS
+- #   - The demo can be used with one of the design size
+- #       DESIGN_SIZE_XGA
+- #       DESIGN_SIZE_720p
+--DEFINES += DESIGN_SIZE_720p
+-+DEFINES += DESIGN_SIZE_XGA
+- 
+- #   - Un-comment following to enable graph scrolling on demo startup
+- #DEFINES += ENABLE_GRAPH_SCROLLING
+-@@ -106,8 +106,8 @@ contains(DEFINES, DESIGN_SIZE_720p) {
+- }
+- 
+- contains(DEFINES, DESIGN_SIZE_XGA) {
+--   #FORMS       += XGA/mainwindow.ui
+--    #RESOURCES   += XGA/images.qrc
+-+   FORMS       += XGA/mainwindow.ui
+-+   RESOURCES   += XGA/images.qrc
+- }
+- contains(DEFINES, PMD_HAMP) {
+-     target.path=$$[QT_INSTALL_EXAMPLES]/HAMPDemo/PatientMonitorDemo
